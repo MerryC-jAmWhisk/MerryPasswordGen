@@ -49,6 +49,7 @@ function generatePassword(){
   console.log(allPossibleChars)
 
   var arrayIndex = 0;
+  // loop through the user selected password length
   for(let i = 0; i < passwordLength; i++){
     console.log(arrayIndex)
     if(arrayIndex == allPossibleChars.length) {
@@ -66,7 +67,6 @@ function generatePassword(){
 
 }
 
-
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
@@ -75,7 +75,6 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = generatedPassword;
-
 }
 
 // Add event listener to generate button
